@@ -1,0 +1,261 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+  --main-font-family: "Spartan", "Arial", sans-serif;
+  --main-font-size: 15px;
+  --main-font-weight: 500;
+  --main-line-height: 24px;
+  --main-color: #7c8f8f;
+  --main-bg-color: #effafa;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan-Bold.woff2") format("woff2"),
+    url("../fonts/Spartan-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan-Medium.woff2") format("woff2"),
+    url("../fonts/Spartan-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+}
+
+.container {
+  width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+/* JOB */
+.job {
+  background-image: url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top 0 center;
+}
+
+.job-container {
+  padding-top: 232px;
+  padding-bottom: 120px;
+}
+
+.job-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.job-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 32px 48px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  border-radius: 5px;
+}
+
+.job-item:nth-child(1) {
+  border-left: 5px solid #5ca5a5;
+}
+
+.job-item:nth-child(2) {
+  border-left: 5px solid #5ca5a5;
+}
+
+.job-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.job-item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.job-item-info-img {
+  margin-right: 24px;
+}
+
+.job-item-info-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.btn {
+  display: block;
+  margin-left: 16px;
+  padding: 6px 8px 4px;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: -0.0846154px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.new-btn {
+  background: #5ca5a5;
+}
+
+.featured-btn {
+  margin-left: 8px;
+  background: #2b3939;
+}
+
+.company-name {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5ca5a5;
+}
+
+.job-item-info-inner-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2b3939;
+}
+
+.job-item-info-inner-title:hover {
+  cursor: pointer;
+  color: #5ca5a5;
+}
+
+.job-item-info-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.about-item:not(:last-child)::after {
+  display: block;
+  width: 4px;
+  height: 4px;
+  content: "";
+  margin-left: 16px;
+  border-radius: 50%;
+  background-color: #b7c4c4;
+}
+
+.about-item-text {
+  margin: 0;
+}
+
+.skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-item {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  background: #eff6f6;
+  border-radius: 4px;
+}
+
+.skill-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.skill-item-link {
+  display: block;
+  padding: 4px 8px;
+  text-decoration: none;
+  color: #5ca5a5;
+}
+
+.skill-item:hover .skill-item-link {
+  color: #fff;
+}
+
+.skill-item:hover {
+  background-color: #5ca5a5;
+}
